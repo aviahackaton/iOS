@@ -9,21 +9,87 @@
 /* Begin PBXBuildFile section */
 		C10253A32465B8AF007E7348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253A22465B8AF007E7348 /* AppDelegate.swift */; };
 		C10253A52465B8AF007E7348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253A42465B8AF007E7348 /* SceneDelegate.swift */; };
-		C10253A72465B8AF007E7348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253A62465B8AF007E7348 /* ViewController.swift */; };
-		C10253AA2465B8AF007E7348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10253A82465B8AF007E7348 /* Main.storyboard */; };
 		C10253AC2465B8B1007E7348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10253AB2465B8B1007E7348 /* Assets.xcassets */; };
 		C10253AF2465B8B1007E7348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10253AD2465B8B1007E7348 /* LaunchScreen.storyboard */; };
+		C10253B72465BA04007E7348 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253B62465BA04007E7348 /* TabBarView.swift */; };
+		C10253BD2465BDDC007E7348 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253BC2465BDDC007E7348 /* MapController.swift */; };
+		C10253CF2465BF22007E7348 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253CE2465BF22007E7348 /* TabBarAssembly.swift */; };
+		C10253F02465BF9B007E7348 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253EF2465BF9B007E7348 /* Assembly.swift */; };
+		C10253F22465BFBB007E7348 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253F12465BFBB007E7348 /* TransitionHandler.swift */; };
+		C10253F52465C017007E7348 /* MapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253F42465C017007E7348 /* MapAssembly.swift */; };
+		C10253F72465C162007E7348 /* Nibless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10253E32465BF2E007E7348 /* Nibless.framework */; };
+		C10253F82465C162007E7348 /* Nibless.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C10253E32465BF2E007E7348 /* Nibless.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C10253FA2465C166007E7348 /* ViewSpecificController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10253EB2465BF75007E7348 /* ViewSpecificController.framework */; };
+		C10253FB2465C166007E7348 /* ViewSpecificController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C10253EB2465BF75007E7348 /* ViewSpecificController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C10253FD2465C1AC007E7348 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253FC2465C1AC007E7348 /* MapView.swift */; };
+		C10253FF2465CB99007E7348 /* PolygonsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10253FE2465CB99007E7348 /* PolygonsResponse.swift */; };
+		C10254022465CEB3007E7348 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254012465CEB3007E7348 /* URLSession.swift */; };
+		C10254082465CF13007E7348 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254072465CF13007E7348 /* MapPresenter.swift */; };
+		C102540D2465D038007E7348 /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102540C2465D038007E7348 /* ViewOutput.swift */; };
+		C102540F2465D0C8007E7348 /* PolygonsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102540E2465D0C8007E7348 /* PolygonsAPI.swift */; };
+		C10254142465DC70007E7348 /* MapRepresentableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254132465DC70007E7348 /* MapRepresentableViewController.swift */; };
+		C10254182465E244007E7348 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254172465E244007E7348 /* Polygon.swift */; };
+		C102541A2465FA7D007E7348 /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254192465FA7D007E7348 /* MapViewDelegate.swift */; };
+		C102541C24660338007E7348 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102541B24660338007E7348 /* MapPin.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10253E22465BF2E007E7348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C10253DE2465BF2E007E7348 /* Nibless.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C100725C243CA5E2004CB175;
+			remoteInfo = Nibless;
+		};
+		C10253EA2465BF75007E7348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C10253E62465BF75007E7348 /* ViewSpecificController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C16A559C243F341A00CAF3CF;
+			remoteInfo = ViewSpecificController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C10253F92465C162007E7348 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C10253FB2465C166007E7348 /* ViewSpecificController.framework in Embed Frameworks */,
+				C10253F82465C162007E7348 /* Nibless.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C102539F2465B8AF007E7348 /* aviahackaton2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aviahackaton2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10253A22465B8AF007E7348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C10253A42465B8AF007E7348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C10253A62465B8AF007E7348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C10253A92465B8AF007E7348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C10253AB2465B8B1007E7348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10253AE2465B8B1007E7348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C10253B02465B8B1007E7348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C10253B62465BA04007E7348 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C10253BC2465BDDC007E7348 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		C10253CE2465BF22007E7348 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
+		C10253DE2465BF2E007E7348 /* Nibless.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nibless.xcodeproj; path = ../../../../Frameworks/Nibless/Nibless.xcodeproj; sourceTree = "<group>"; };
+		C10253E62465BF75007E7348 /* ViewSpecificController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ViewSpecificController.xcodeproj; path = ../../../../Frameworks/ViewSpecificController/ViewSpecificController.xcodeproj; sourceTree = "<group>"; };
+		C10253EF2465BF9B007E7348 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		C10253F12465BFBB007E7348 /* TransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		C10253F42465C017007E7348 /* MapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembly.swift; sourceTree = "<group>"; };
+		C10253FC2465C1AC007E7348 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C10253FE2465CB99007E7348 /* PolygonsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonsResponse.swift; sourceTree = "<group>"; };
+		C10254012465CEB3007E7348 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		C10254072465CF13007E7348 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		C102540C2465D038007E7348 /* ViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
+		C102540E2465D0C8007E7348 /* PolygonsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonsAPI.swift; sourceTree = "<group>"; };
+		C10254132465DC70007E7348 /* MapRepresentableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRepresentableViewController.swift; sourceTree = "<group>"; };
+		C10254172465E244007E7348 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		C10254192465FA7D007E7348 /* MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
+		C102541B24660338007E7348 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10253FA2465C166007E7348 /* ViewSpecificController.framework in Frameworks */,
+				C10253F72465C162007E7348 /* Nibless.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +110,7 @@
 			children = (
 				C10253A12465B8AF007E7348 /* aviahackaton2.0 */,
 				C10253A02465B8AF007E7348 /* Products */,
+				C10253F62465C162007E7348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +125,142 @@
 		C10253A12465B8AF007E7348 /* aviahackaton2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				C10253CC2465BF02007E7348 /* Application Layer */,
+				C10253D02465BF27007E7348 /* Common */,
+				C10254102465D0CC007E7348 /* Core */,
+				C10253CB2465BEFB007E7348 /* Modules */,
+				C10253F32465BFD9007E7348 /* Supporting Files */,
+			);
+			path = aviahackaton2.0;
+			sourceTree = "<group>";
+		};
+		C10253CA2465BEF2007E7348 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C10253F42465C017007E7348 /* MapAssembly.swift */,
+				C10253BC2465BDDC007E7348 /* MapController.swift */,
+				C10254192465FA7D007E7348 /* MapViewDelegate.swift */,
+				C10254072465CF13007E7348 /* MapPresenter.swift */,
+				C10253FC2465C1AC007E7348 /* MapView.swift */,
+				C10254132465DC70007E7348 /* MapRepresentableViewController.swift */,
+				C10254172465E244007E7348 /* Polygon.swift */,
+				C102541B24660338007E7348 /* MapPin.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C10253CB2465BEFB007E7348 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C10253CD2465BF13007E7348 /* TabBar */,
+				C10253CA2465BEF2007E7348 /* Map */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C10253CC2465BF02007E7348 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
 				C10253A22465B8AF007E7348 /* AppDelegate.swift */,
 				C10253A42465B8AF007E7348 /* SceneDelegate.swift */,
-				C10253A62465B8AF007E7348 /* ViewController.swift */,
-				C10253A82465B8AF007E7348 /* Main.storyboard */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		C10253CD2465BF13007E7348 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C10253B62465BA04007E7348 /* TabBarView.swift */,
+				C10253CE2465BF22007E7348 /* TabBarAssembly.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C10253D02465BF27007E7348 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C10253DD2465BF2D007E7348 /* UI */,
+				C10253E42465BF44007E7348 /* Protocols */,
+				C10254002465CB9D007E7348 /* Models */,
+				C10254032465CEB6007E7348 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C10253DD2465BF2D007E7348 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C10253DE2465BF2E007E7348 /* Nibless.xcodeproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C10253DF2465BF2E007E7348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10253E32465BF2E007E7348 /* Nibless.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C10253E42465BF44007E7348 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C10253E62465BF75007E7348 /* ViewSpecificController.xcodeproj */,
+				C10253EF2465BF9B007E7348 /* Assembly.swift */,
+				C10253F12465BFBB007E7348 /* TransitionHandler.swift */,
+				C102540C2465D038007E7348 /* ViewOutput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C10253E72465BF75007E7348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10253EB2465BF75007E7348 /* ViewSpecificController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C10253F32465BFD9007E7348 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				C10253AB2465B8B1007E7348 /* Assets.xcassets */,
 				C10253AD2465B8B1007E7348 /* LaunchScreen.storyboard */,
 				C10253B02465B8B1007E7348 /* Info.plist */,
 			);
-			path = aviahackaton2.0;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C10253F62465C162007E7348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C10254002465CB9D007E7348 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C10253FE2465CB99007E7348 /* PolygonsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C10254032465CEB6007E7348 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C10254012465CEB3007E7348 /* URLSession.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C10254102465D0CC007E7348 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C102540E2465D0C8007E7348 /* PolygonsAPI.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +273,7 @@
 				C102539B2465B8AF007E7348 /* Sources */,
 				C102539C2465B8AF007E7348 /* Frameworks */,
 				C102539D2465B8AF007E7348 /* Resources */,
+				C10253F92465C162007E7348 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +310,39 @@
 			mainGroup = C10253962465B8AF007E7348;
 			productRefGroup = C10253A02465B8AF007E7348 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C10253DF2465BF2E007E7348 /* Products */;
+					ProjectRef = C10253DE2465BF2E007E7348 /* Nibless.xcodeproj */;
+				},
+				{
+					ProductGroup = C10253E72465BF75007E7348 /* Products */;
+					ProjectRef = C10253E62465BF75007E7348 /* ViewSpecificController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C102539E2465B8AF007E7348 /* aviahackaton2.0 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C10253E32465BF2E007E7348 /* Nibless.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nibless.framework;
+			remoteRef = C10253E22465BF2E007E7348 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C10253EB2465BF75007E7348 /* ViewSpecificController.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ViewSpecificController.framework;
+			remoteRef = C10253EA2465BF75007E7348 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C102539D2465B8AF007E7348 /* Resources */ = {
@@ -127,7 +351,6 @@
 			files = (
 				C10253AF2465B8B1007E7348 /* LaunchScreen.storyboard in Resources */,
 				C10253AC2465B8B1007E7348 /* Assets.xcassets in Resources */,
-				C10253AA2465B8AF007E7348 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +361,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C10253A72465B8AF007E7348 /* ViewController.swift in Sources */,
+				C10254182465E244007E7348 /* Polygon.swift in Sources */,
 				C10253A32465B8AF007E7348 /* AppDelegate.swift in Sources */,
+				C10253F02465BF9B007E7348 /* Assembly.swift in Sources */,
+				C10254022465CEB3007E7348 /* URLSession.swift in Sources */,
+				C102541A2465FA7D007E7348 /* MapViewDelegate.swift in Sources */,
+				C10253F52465C017007E7348 /* MapAssembly.swift in Sources */,
+				C10253CF2465BF22007E7348 /* TabBarAssembly.swift in Sources */,
+				C10253B72465BA04007E7348 /* TabBarView.swift in Sources */,
+				C10253FF2465CB99007E7348 /* PolygonsResponse.swift in Sources */,
+				C10253F22465BFBB007E7348 /* TransitionHandler.swift in Sources */,
+				C10253BD2465BDDC007E7348 /* MapController.swift in Sources */,
+				C102540D2465D038007E7348 /* ViewOutput.swift in Sources */,
+				C102541C24660338007E7348 /* MapPin.swift in Sources */,
+				C102540F2465D0C8007E7348 /* PolygonsAPI.swift in Sources */,
+				C10253FD2465C1AC007E7348 /* MapView.swift in Sources */,
 				C10253A52465B8AF007E7348 /* SceneDelegate.swift in Sources */,
+				C10254142465DC70007E7348 /* MapRepresentableViewController.swift in Sources */,
+				C10254082465CF13007E7348 /* MapPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C10253A82465B8AF007E7348 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C10253A92465B8AF007E7348 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C10253AD2465B8B1007E7348 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +516,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9SGQL8822;
-				INFOPLIST_FILE = aviahackaton2.0/Info.plist;
+				INFOPLIST_FILE = "aviahackaton2.0/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gmg.aviahackaton2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +535,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9SGQL8822;
-				INFOPLIST_FILE = aviahackaton2.0/Info.plist;
+				INFOPLIST_FILE = "aviahackaton2.0/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gmg.aviahackaton2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
