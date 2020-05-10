@@ -22,6 +22,16 @@ final class MapController: UIViewController, ViewSpecificController {
         super.viewDidLoad()
         presenter.viewDidLoad()
         mapViewDelegate = MapViewDelegate()
+        
+        setupMap()
+        setupNavigation()
+    }
+    
+    private func setupNavigation() {
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(image: UIImage(systemName: "text.justify"), style: .plain, target: self, action: #selector(rightBarButtonTapped(_:))),
+            UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadButtonTapped(_:)))
+        ]
     }
     
     private func setupMap() {
@@ -30,14 +40,22 @@ final class MapController: UIViewController, ViewSpecificController {
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.startUpdatingLocation()
     }
+    
+    @objc private func rightBarButtonTapped(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    @objc private func reloadButtonTapped(_ sender: UIBarButtonItem) {
+        
+    }
 }
 
 extension MapController: MapViewInput {
     func show(_ polygons: [PolygonsResponse]) {
         polygons.forEach { polygon in
-            var locations = polygon.coordinates.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lon) }
+            var locations = polygon.coordinates.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
             
-            let points = polygon.coordinates.map { CGPoint(x: $0.lat, y: $0.lon) }
+            let points = polygon.coordinates.map { CGPoint(x: $0.lat, y: $0.lng) }
             let point = presenter.centerOf(points: points)
             let annotationPoint = CLLocationCoordinate2D(latitude: Double(point?.x ?? 0), longitude: Double(point?.y ?? 0))
             let annotation = MKPointAnnotation()

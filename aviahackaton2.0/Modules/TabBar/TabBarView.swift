@@ -1,19 +1,33 @@
 import SwiftUI
 
 struct TabBarView: View {
+    
+    @State var isReportsActive = false
+    
     var body: some View {
         TabView {
-            MapRepresantableViewController()
-                .edgesIgnoringSafeArea(.top)
+            NavigationView {
+                MapRepresantableViewController()
+                    .navigationBarTitle(Text("Map"))
+                    .navigationBarItems(trailing:
+                        NavigationLink(destination: ReportsView(), isActive: $isReportsActive) {
+                            Image(systemName: "text.justify")
+                    })
+            }
+            .tabItem {
+                Image(systemName: "map")
+                Text("Map")
+            }.tag(1)
+            ResultsView()
                 .tabItem {
-                    Image(systemName: "map")
-                    Text("Map")
-                }.tag(0)
+                    Image(systemName: "text.justify")
+                    Text("Results")
+            }
             Text("Типо важный экран, который никто не должен видеть")
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
-                }.tag(1)
+            }.tag(2)
         }
     }
 }

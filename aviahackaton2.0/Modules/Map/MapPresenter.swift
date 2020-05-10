@@ -37,8 +37,8 @@ final class MapPresenter: MapViewOutput {
         }
         
         let z = 1 / (3 * sum)
-        return CGPoint(x:pSum.x * z,
-                       y:pSum.y * z)
+        return CGPoint(x: pSum.x * z,
+                       y: pSum.y * z)
     }
 }
 

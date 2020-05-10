@@ -30,7 +30,11 @@
 		C10254142465DC70007E7348 /* MapRepresentableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254132465DC70007E7348 /* MapRepresentableViewController.swift */; };
 		C10254182465E244007E7348 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254172465E244007E7348 /* Polygon.swift */; };
 		C102541A2465FA7D007E7348 /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10254192465FA7D007E7348 /* MapViewDelegate.swift */; };
-		C102541C24660338007E7348 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102541B24660338007E7348 /* MapPin.swift */; };
+		C1C29A2D2467D81D0099855A /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C29A2C2467D81D0099855A /* ReportsView.swift */; };
+		C1C29A322467D8340099855A /* ReportsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C29A312467D8340099855A /* ReportsAssembly.swift */; };
+		C1C29A342467D8440099855A /* ReportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C29A332467D8440099855A /* ReportsViewModel.swift */; };
+		C1C29A362467E3510099855A /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C29A352467E3510099855A /* ResultsView.swift */; };
+		C1C29A382467E38D0099855A /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C29A372467E38D0099855A /* ResultsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +93,11 @@
 		C10254132465DC70007E7348 /* MapRepresentableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRepresentableViewController.swift; sourceTree = "<group>"; };
 		C10254172465E244007E7348 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
 		C10254192465FA7D007E7348 /* MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
-		C102541B24660338007E7348 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		C1C29A2C2467D81D0099855A /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		C1C29A312467D8340099855A /* ReportsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsAssembly.swift; sourceTree = "<group>"; };
+		C1C29A332467D8440099855A /* ReportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewModel.swift; sourceTree = "<group>"; };
+		C1C29A352467E3510099855A /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		C1C29A372467E38D0099855A /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +152,6 @@
 				C10253FC2465C1AC007E7348 /* MapView.swift */,
 				C10254132465DC70007E7348 /* MapRepresentableViewController.swift */,
 				C10254172465E244007E7348 /* Polygon.swift */,
-				C102541B24660338007E7348 /* MapPin.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 			children = (
 				C10253CD2465BF13007E7348 /* TabBar */,
 				C10253CA2465BEF2007E7348 /* Map */,
+				C1C29A302467D8220099855A /* Reports */,
+				C1C29A392467E3900099855A /* Results */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -170,8 +179,8 @@
 		C10253CD2465BF13007E7348 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				C10253B62465BA04007E7348 /* TabBarView.swift */,
 				C10253CE2465BF22007E7348 /* TabBarAssembly.swift */,
+				C10253B62465BA04007E7348 /* TabBarView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -261,6 +270,25 @@
 				C102540E2465D0C8007E7348 /* PolygonsAPI.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		C1C29A302467D8220099855A /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				C1C29A312467D8340099855A /* ReportsAssembly.swift */,
+				C1C29A2C2467D81D0099855A /* ReportsView.swift */,
+				C1C29A332467D8440099855A /* ReportsViewModel.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		C1C29A392467E3900099855A /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				C1C29A352467E3510099855A /* ResultsView.swift */,
+				C1C29A372467E38D0099855A /* ResultsViewModel.swift */,
+			);
+			path = Results;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,21 +392,25 @@
 				C10254182465E244007E7348 /* Polygon.swift in Sources */,
 				C10253A32465B8AF007E7348 /* AppDelegate.swift in Sources */,
 				C10253F02465BF9B007E7348 /* Assembly.swift in Sources */,
+				C1C29A342467D8440099855A /* ReportsViewModel.swift in Sources */,
+				C1C29A362467E3510099855A /* ResultsView.swift in Sources */,
 				C10254022465CEB3007E7348 /* URLSession.swift in Sources */,
 				C102541A2465FA7D007E7348 /* MapViewDelegate.swift in Sources */,
 				C10253F52465C017007E7348 /* MapAssembly.swift in Sources */,
 				C10253CF2465BF22007E7348 /* TabBarAssembly.swift in Sources */,
+				C1C29A382467E38D0099855A /* ResultsViewModel.swift in Sources */,
 				C10253B72465BA04007E7348 /* TabBarView.swift in Sources */,
 				C10253FF2465CB99007E7348 /* PolygonsResponse.swift in Sources */,
 				C10253F22465BFBB007E7348 /* TransitionHandler.swift in Sources */,
 				C10253BD2465BDDC007E7348 /* MapController.swift in Sources */,
 				C102540D2465D038007E7348 /* ViewOutput.swift in Sources */,
-				C102541C24660338007E7348 /* MapPin.swift in Sources */,
+				C1C29A2D2467D81D0099855A /* ReportsView.swift in Sources */,
 				C102540F2465D0C8007E7348 /* PolygonsAPI.swift in Sources */,
 				C10253FD2465C1AC007E7348 /* MapView.swift in Sources */,
 				C10253A52465B8AF007E7348 /* SceneDelegate.swift in Sources */,
 				C10254142465DC70007E7348 /* MapRepresentableViewController.swift in Sources */,
 				C10254082465CF13007E7348 /* MapPresenter.swift in Sources */,
+				C1C29A322467D8340099855A /* ReportsAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
